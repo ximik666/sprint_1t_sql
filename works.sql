@@ -74,7 +74,8 @@ CREATE TABLE public.grade
 /*
 Уникальный номер сотрудника, его ФИО и стаж работы – для всех сотрудников компании
 */
-
+ 
+ 
 select id, fio, date_part('year', now()) - date_part('year', start_work) year_work from person;
 
 /*
